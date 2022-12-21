@@ -1,0 +1,21 @@
+{
+  "name": "node-cpp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "author": "Olle Halvarsson",
+  "license": "ISC",
+  "gypfile": true,
+  "scripts": {
+    "build": "node-gyp rebuild",
+    "clean": "node-gyp clean",
+    "test": "npm test"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "node": "^19.3.0",
+    "node-addon-api": "^5.0.0",
+    "node-gyp": "^9.3.0",
+    "nodejs": "^0.0.0"
+  }
+}

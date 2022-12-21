@@ -1,0 +1,171 @@
+#everything {
+  display: flex;
+  gap: 6px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#gameOverScreen {
+  font-family: "Trebuchet MS", calibri, sans-serif;
+  max-width: 85vw;
+  max-height: 85vh;
+  text-align: center;
+  z-index: 100;
+  width: 400px;
+  color: aliceblue;
+  position: fixed;
+  transition: all 0.8s;
+  box-shadow: 0 0 100000px black;
+  border-radius: 10px;
+}
+
+.msgStatus {
+  font-size: 34px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 10px 5px;
+  box-sizing: content-box;
+  background-color: #1d1d1d;
+}
+
+#gameOverScreenReplay {
+  font-size: 18px;
+  border: none;
+  padding: 10px;
+  margin: 10px 0 0 0;
+  border-radius: 5px;
+  background-color: brown;
+  color: white;
+}
+
+#gameOverScreenReplay:hover {
+  cursor: pointer;
+  filter: brightness(110%);
+}
+
+#gameOverScreenWhoWon {
+  opacity: 0;
+  transition: opacity 1.2s;
+}
+
+.msgBody {
+  font-size: 18px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 15px 5px;
+  box-sizing: content-box;
+  background-color: #575757;
+}
+
+#gameButtonArea {
+  display: flex;
+  gap: 8px;
+}
+
+.gameButton {
+  box-sizing: border-box;
+  aspect-ratio: 1;
+  width: 3vh;
+  background: #514b46;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  border: 1px #bdbcb8 solid;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.gameButton:hover {
+  border-radius: 0;
+}
+
+.buttonimg {
+  height: 100%;
+  filter: invert(92%) sepia(4%) saturate(199%) hue-rotate(11deg) brightness(82%) contrast(90%);
+}
+
+#gameArea {
+  box-sizing: border-box;
+  display: flex;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  aspect-ratio: 1.08/1;
+}
+
+#gameStatusBarContainer {
+  width: 60px;
+  border: 1px solid darkgray;
+  border-right: none;
+}
+
+#gameStatusBar {
+  background: #413c38;
+  width: 100%;
+  height: 50%;
+  transition: all 0.5s;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+#chess-board {
+  border: 4px solid darkgray;
+  aspect-ratio: 1;
+  transition: all 0.6s;
+}
+
+.board-row {
+  display: flex;
+  max-height: calc(100% / 8);
+  max-width: 100vh;
+}
+
+.square {
+  aspect-ratio: 1;
+  width: calc(100% / 8);
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.square:active img {
+  width: 80%;
+}
+
+.white-square {
+  background: #e9daca;
+}
+
+.black-square {
+  background: #535353;
+}
+
+.pieceIMG {
+  width: 100%;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.marked-square {
+  cursor: pointer;
+  transition: all 0.2s;
+  /* border: 3px solid #443d3d; */
+  box-sizing: border-box;
+  box-shadow: 0px 0px 28px #000000ad inset;
+}
+
+.recentMoveHighlight {
+  background: #eabd32;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="./style.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gchess</title>
+</head>
+
+<body>
+  <div id="everything">
+    <div id="gameOverScreen" style="bottom: -100vh">
+      <div class="msgStatus">
+        <p id="gameOverScreenWhoWon">White Wins</p>
+      </div>
+      <div class="msgBody">
+        <p id="wayOfWinning">Checkmate</p>
+        <p id="moveCount">32 moves</p>
+        <p id="score">score 0-1</p>
+        <div class="buttonArea">
+          <button id="gameOverScreenReplay" onclick="startGame()">Play Again</button>
+        </div>
+      </div>
+    </div>
+    <div id="gameButtonArea">
+      <button class="gameButton" onclick="travelGameHistory(-1)">
+        <img class="buttonimg"
+          src="https://cdn.glitch.global/80282ad1-7516-4e9f-99a9-adff29bc37a9/chevron-back-outline.svg?v=1668363293772" />
+      </button>
+      <button class="gameButton" onclick="travelGameHistory(1)">
+        <img class="buttonimg"
+          src="https://cdn.glitch.global/80282ad1-7516-4e9f-99a9-adff29bc37a9/chevron-forward-outline.svg?v=1668363288596" />
+      </button>
+      <button class="gameButton" onclick="startGame()">
+        <img class="buttonimg"
+          src="https://cdn.glitch.global/80282ad1-7516-4e9f-99a9-adff29bc37a9/refresh-outline.svg?v=1668363028416" />
+      </button>
+    </div>
+    <div id="gameArea">
+      <div id="gameStatusBarContainer">
+        <div id="gameStatusBar"></div>
+      </div>
+      <div id="chess-board"></div>
+    </div>
+  </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
